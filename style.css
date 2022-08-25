@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    padding: 20px;
+}
+
+#root, button, input, input[type="checkbox"] {
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 1em;
+    font-size: 22px;
+}
+
+#root {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    box-shadow: 0 0 100px 10px black;
+    padding: 20px;
+    border: 0;
+}
+
+.header, .navigation, .info {
+    display: flex;
+}
+
+button, input, li, .menu__text, .menu__date, .done {
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 1em;
+}
+
+
+button, .done {
+    cursor: pointer;
+    background: aqua;
+    width: 20%;
+    min-height: 50px;
+    margin: 10px;
+    min-width: 130px;
+    transition: 0.5s;
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.47);
+    padding: 5px;
+}
+
+button:hover, .done:hover {
+    background: #002979;
+    color: white;
+    transition: 0.7s;
+}
+
+button:active, .done:active {
+    transform: translate(5px, 5px);
+    transition: 0.1s;
+    box-shadow: 0 0 0 0;
+}
+
+input[type="text"] {
+    padding: 0 20px;
+    width: 100%;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+.menu {
+    min-height: 500px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+li {
+    width: 75%;
+    margin: 20px auto;
+    min-height: 150px;
+    background: #efffff;
+    box-shadow: 5px 5px 20px 0 rgba(4, 37, 37, 0.47);
+    transition: 1s;
+}
+
+.menu__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__nav button, .menu__nav .done {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 60%;
+    border: 0;
+}
+
+.menu__text {
+    background: white;
+    width: 80%;
+    min-height: 50px;
+    margin: 20px auto;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.info {
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto 0 auto;
+    width: 50%;
+}
+
+.green {
+    background: green;
+    opacity: 0.5;
+    box-shadow: 5px 5px 20px 0 rgba(3, 148, 11, 0.47);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.display-none {
+    display: none;
+}
+
+.red {
+    background: #ff6969;
+}

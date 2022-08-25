@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id='root'>
+    <div class="header">
+        <button class="show-all red">Show All</button>
+        <button class="show-completed">Show Completed</button>
+        <input type="text" name="add-todo" id="add-todo" placeholder="Добавим себе задачу!">
+        <button class="add">Add</button>
+    </div>
+    <div class="navigation">
+        <button class="delete-all">Delete All</button>
+        <button class="delete-last">Delete Last</button>
+        <input type="text" name="search" id="searchInput" placeholder="Поиск!">
+        <button class="search">Search</button>
+    </div>
+    <div class="info">
+        <p>All: <span class="all">0</span></p>
+        <p>Completed: <span class="completed">0</span></p>
+    </div>
+    <div class="menu">
+        <ul>
+
+        </ul>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
